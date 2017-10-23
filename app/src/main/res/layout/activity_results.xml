@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.j_e.iseseisevquizzzz.ResultsActivity">
+
+    <!--Loome nupu, mis õnnitleb meid.-->
+    <TextView
+        android:id="@+id/grade"
+        android:layout_margin="16dp"
+        android:fontFamily="casual"
+        android:textColor="#000"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulations">
+    </TextView>
+    <!--Loome textview, mis näitab meile lõpuskoori ja palju küsimusi on-->
+    <TextView
+        android:id="@+id/outOf"
+        android:fontFamily="casual"
+        android:layout_margin="16dp"
+        android:textColor="#000"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="You scored 10 out of 10"
+        android:layout_below="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <!--Loome nupu, millega saab pärast uuesti alustada quizi.-->
+    <Button
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:background="#4CAF50"
+        android:textColor="#fff"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:text="Retry Quiz"
+        android:id="@+id/retry"
+        android:layout_below="@+id/outOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <!--Loome nupu, mis viiks meid vajutusel pärast õigete vastuste activitysse.-->
+    <Button
+        android:id="@+id/answerz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See correct answers"
+        android:onClick="seeAnswers"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:background="#4CAF50"
+        android:textColor="#000"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+</RelativeLayout>
